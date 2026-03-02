@@ -1,0 +1,110 @@
+<!-- ═══════════════════════════════════════════════ -->
+<!-- GHL BODY CODE — Paste in Page Settings → Body  -->
+<!-- ═══════════════════════════════════════════════ -->
+
+<script>
+    (function () {
+        "use strict";
+
+        // Data
+        const WHY_DATA = [
+            { icon: "award", title: "Quality You Can See", desc: "We take pride in every yard we touch. Our attention to detail and dedication to quality sets us apart from the competition." },
+            { icon: "shield", title: "Satisfaction Guaranteed", desc: "Your happiness is our priority. If you're not satisfied with our work, we'll come back and make it right — no questions asked." },
+            { icon: "users", title: "Personal Touch", desc: "Owner-operated and hands-on. Alex Sebastian personally oversees every project to ensure your vision comes to life." },
+            { icon: "droplets", title: "Water-Smart Solutions", desc: "California-friendly irrigation and drought-tolerant landscaping that keeps your yard green while saving water and money." },
+            { icon: "calendar-check", title: "Reliable & Consistent", desc: "We show up when we say we will. Our weekly maintenance clients trust us for dependable, on-schedule service every time." },
+            { icon: "badge-check", title: "Licensed & Insured", desc: "Fully licensed with comprehensive liability insurance. Your property and our crew are protected on every job." }
+        ];
+        const PROCESS_DATA = [
+            { num: "01", icon: "compass", title: "Free Consultation", desc: "We visit your property, listen to your vision, assess the site, and provide a detailed estimate — no strings attached." },
+            { num: "02", icon: "sparkles", title: "Custom Design", desc: "Our designers create a tailored plan with 3D renderings so you can see and refine your new landscape before we break ground." },
+            { num: "03", icon: "tree-pine", title: "Expert Installation", desc: "Our crew handles everything from permits to planting, keeping you informed at every milestone. On time, on budget." },
+            { num: "04", icon: "leaf", title: "Enjoy & Maintain", desc: "Walk through your transformed space with confidence, backed by our 5-year warranty and optional year-round maintenance." }
+        ];
+        const SERVICES_DATA = [
+            { title: "Weekly Lawn Maintenance", desc: "Keep your lawn looking pristine year-round with our comprehensive weekly service — mowing, edging, trimming, weeding, and leaf blowing. Starting at just $120/month.", img: "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=800&q=80", tags: ["Mowing & Edging", "Weed Control", "Starting at $120/mo"] },
+            { title: "Landscape Design & Installation", desc: "Transform your outdoor space from concept to completion. We create custom designs tailored to your property, lifestyle, and California's climate.", img: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80", tags: ["Custom Designs", "Native Plants", "Property Value Boost"] },
+            { title: "Irrigation Systems & Repair", desc: "Smart irrigation solutions that keep your landscape healthy while conserving water. From new installations to system repairs and upgrades.", img: "https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=800&q=80", tags: ["Water Conservation", "Smart Controllers", "System Repairs"] },
+            { title: "Seasonal Planting & Garden Care", desc: "Beautiful seasonal color and garden beds designed and maintained by experts. We select the right plants for Ventura County's unique climate.", img: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=800&q=80", tags: ["Seasonal Color", "Drought-Tolerant", "Year-Round Beauty"] }
+        ];
+        const TESTIMONIALS_DATA = [
+            { name: "Michelle Sandler", role: "Google Review · 5★", content: "Sebastian's Landscaping did an incredible job with the landscaping in our backyard! It turned out better than we ever expected! Our backyard was covered in rocks and stones with no grass, and Alex Sebastian did a wonderful landscaping job with adding the grass and making it all look so nice.", project: "Backyard Transformation" },
+            { name: "Amanda Maxwell", role: "Google Review · 5★", content: "I am extremely happy with the services provided by Sebastian and his team! My yard looks amazing and I was fairly quoted after being overly quoted by other companies! 5 stars definitely!!", project: "Yard Makeover" },
+            { name: "Ma Riolette Hidalgo", role: "Google Review · 5★", content: "Alex and his crew made the backyard transformation effortless for first-time homeowners like us. He was very responsive, offered expert advice, and seamlessly integrated the new irrigation to our existing system. We highly recommend Sebastian's Landscaping!", project: "Irrigation & Backyard" },
+            { name: "Will Cowles Meyer", role: "Google Review · 5★", content: "He did fantastic work. Our front yard was entirely bare, dead grass and weeds and he and his team completely transformed it! He was very easy to work with, very knowledgeable and kept the project within our budget.", project: "Front Yard Transformation" }
+        ];
+        const FAQS_DATA = [
+            { q: "How quickly can you start my project?", a: "We typically schedule consultations within 48 hours, and most projects begin within 1-2 weeks of approval. For weekly maintenance, we can usually start the following Monday." },
+            { q: "What does your weekly maintenance include?", a: "Our weekly maintenance package starts at $120/month and includes lawn mowing, edging, trimming, weeding, and leaf blowing. We customize the service to fit your property's specific needs." },
+            { q: "Do you offer one-time cleanups?", a: "Yes! We offer one-time yard cleanups, seasonal cleanups, and property preparation services. Contact us for a free estimate on any one-time project." },
+            { q: "Are you licensed and insured?", a: "Yes. Sebastian's Landscaping is fully licensed and carries comprehensive general liability insurance. Your property and our team are fully protected on every job." },
+            { q: "What areas do you serve?", a: "We primarily serve Fillmore, Santa Paula, Moorpark, Camarillo, Thousand Oaks, Ojai, Ventura, and surrounding Ventura County communities." },
+            { q: "Do you offer free estimates?", a: "Absolutely! We provide free on-site estimates for all projects. Give us a call at (805) 514-9924 or fill out our contact form, and we'll schedule a time to visit your property." }
+        ];
+        const AREAS = ["Fillmore", "Santa Paula", "Moorpark", "Camarillo", "Thousand Oaks", "Ojai", "Ventura", "Simi Valley", "Upper Ojai"];
+
+        // Render dynamic sections
+        function renderCards() {
+            // Why cards
+            document.getElementById('whyCards').innerHTML = WHY_DATA.map(d => `<div class="card fade-up"><div class="card-icon"><i data-lucide="${d.icon}" style="width:28px;height:28px;stroke-width:1.5"></i></div><h3>${d.title}</h3><p>${d.desc}</p></div>`).join('');
+            // Process cards
+            document.getElementById('processCards').innerHTML = PROCESS_DATA.map((d, i) => `<div class="process-card fade-up"><span class="process-num">${d.num}</span><div style="position:relative;z-index:1"><div class="process-icon"><i data-lucide="${d.icon}" style="width:32px;height:32px;stroke-width:1.5"></i></div><h3 style="font-size:1.5rem;font-style:italic;margin-bottom:1rem">${d.title}</h3><p style="color:rgba(18,31,18,.5);line-height:1.6">${d.desc}</p></div>${i < 3 ? '<div style="display:none" class="arrow-hint"><i data-lucide="arrow-right" style="width:24px;height:24px;color:rgba(18,31,18,.1)"></i></div>' : ''}</div>`).join('');
+            // Service cards
+            document.getElementById('serviceCards').innerHTML = SERVICES_DATA.map(d => `<div class="service-item fade-up"><div class="service-img-wrap"><img src="${d.img}" alt="${d.title}" referrerpolicy="no-referrer" loading="lazy"/><div class="service-img-overlay"></div></div><div class="service-header"><div><h3>${d.title}</h3><p>${d.desc}</p><div class="service-tags">${d.tags.map(t => `<span class="tag"><i data-lucide="check-circle-2" style="width:12px;height:12px"></i> ${t}</span>`).join('')}</div></div><a href="#contact" aria-label="Get a quote for ${d.title}" class="service-arrow"><i data-lucide="arrow-right" style="width:20px;height:20px;stroke-width:1"></i></a></div></div>`).join('');
+            // Testimonials
+            document.getElementById('testimonialCards').innerHTML = TESTIMONIALS_DATA.map(d => `<div class="testimonial fade-up"><div class="quote-icon"><i data-lucide="quote" style="width:40px;height:40px;stroke-width:1"></i></div><blockquote>"${d.content}"</blockquote><div class="testimonial-footer"><div class="testimonial-author"><div class="author-avatar">${d.name[0]}</div><div><p class="author-name">${d.name}</p><p class="author-role">${d.role}</p></div></div><span class="project-tag">${d.project}</span></div></div>`).join('');
+            // Areas
+            document.getElementById('areaTags').innerHTML = AREAS.map(a => `<span class="area-tag"><i data-lucide="map-pin" style="width:16px;height:16px"></i> ${a}</span>`).join('');
+            // FAQs
+            document.getElementById('faqList').innerHTML = FAQS_DATA.map((d, i) => `<div class="faq-item${i === 0 ? ' open' : ''}" onclick="toggleFaq(this)"><button class="faq-btn" aria-expanded="${i === 0}"><span>${d.q}</span><div class="faq-chevron"><i data-lucide="chevron-down" style="width:20px;height:20px;stroke-width:1"></i></div></button><div class="faq-answer"><p>${d.a}</p></div></div>`).join('');
+            // Re-render Lucide icons
+            lucide.createIcons();
+        }
+
+        window.toggleFaq = function (el) {
+            const wasOpen = el.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(f => { f.classList.remove('open'); f.querySelector('.faq-btn').setAttribute('aria-expanded', 'false') });
+            if (!wasOpen) { el.classList.add('open'); el.querySelector('.faq-btn').setAttribute('aria-expanded', 'true') }
+        }
+
+        // Form handler
+        window.handleFormSubmit = function (e) {
+            e.preventDefault();
+            var form = document.getElementById('contactForm');
+            var success = document.getElementById('formSuccess');
+            form.style.display = 'none';
+            success.style.display = 'block';
+        }
+
+        // Scroll effects
+        function initScroll() {
+            const nav = document.getElementById('navbar');
+            const bar = document.getElementById('stickyBar');
+            const heroBg = document.getElementById('heroBg');
+            window.addEventListener('scroll', () => {
+                const y = window.scrollY;
+                nav.classList.toggle('scrolled', y > 50);
+                bar.classList.toggle('show', y > 600);
+                if (heroBg) heroBg.style.transform = 'scale(1.1) translateY(' + y * 0.4 + 'px)';
+            }, { passive: true });
+        }
+
+        // Intersection Observer for fade-in
+        function initAnimations() {
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) } });
+            }, { threshold: 0.1, rootMargin: '-50px' });
+            document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+        }
+
+        // Init
+        document.addEventListener('DOMContentLoaded', () => {
+            var yearEl = document.getElementById('footerYear');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+            renderCards();
+            initScroll();
+            setTimeout(initAnimations, 100);
+        });
+
+    })();
+</script>

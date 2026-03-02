@@ -1,0 +1,10 @@
+/* GHL CSS Overrides — Paste in Page Settings → Custom CSS if needed */
+
+/* Remove GHL default padding if it conflicts */
+.section_wrapper { padding: 0 !important; }
+
+/* Ensure fixed navbar works in GHL */
+#ghl-custom-site .navbar { position: fixed !important; }
+
+/* Match background color */
+body { background: #fcfaf7 !important; }

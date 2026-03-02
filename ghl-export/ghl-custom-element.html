@@ -1,0 +1,390 @@
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- GHL CUSTOM CODE ELEMENT — Paste in Custom Code element    -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<div id="ghl-custom-site">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav id="navbar" class="navbar" aria-label="Main navigation">
+            <div class="max-w navbar-inner">
+                <a href="#" aria-label="Sebastian's Landscaping — Home" class="nav-logo"><img src="sebastian-logo.png"
+                        alt="Sebastian's Landscaping" class="nav-logo-img" /></a>
+                <div class="nav-links">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#process" class="nav-link">Process</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="tel:8055149924" class="nav-link" style="display:flex;align-items:center;gap:.5rem"><i
+                            data-lucide="phone" style="width:14px;height:14px"></i> (805) 514-9924</a>
+                    <a href="#contact" class="nav-cta">Free Estimate</a>
+                </div>
+                <button class="mobile-toggle" aria-label="Open navigation menu"
+                    onclick="document.getElementById('mobMenu').classList.toggle('open');this.setAttribute('aria-label',document.getElementById('mobMenu').classList.contains('open')?'Close navigation menu':'Open navigation menu')"><i
+                        data-lucide="menu" style="width:24px;height:24px"></i></button>
+            </div>
+            <div id="mobMenu" class="mobile-menu">
+                <a href="#services" onclick="document.getElementById('mobMenu').classList.remove('open')">Services</a>
+                <a href="#process" onclick="document.getElementById('mobMenu').classList.remove('open')">Process</a>
+                <a href="#about" onclick="document.getElementById('mobMenu').classList.remove('open')">About</a>
+                <a href="#testimonials"
+                    onclick="document.getElementById('mobMenu').classList.remove('open')">Testimonials</a>
+                <a href="tel:8055149924" class="mob-btn"
+                    style="background:#fff;border:1px solid rgba(18,31,18,.1);color:var(--brand-primary)"
+                    onclick="document.getElementById('mobMenu').classList.remove('open')"><i data-lucide="phone"
+                        style="width:16px;height:16px"></i> (805) 514-9924</a>
+                <a href="#contact" class="mob-btn" style="background:var(--brand-primary);color:#fff"
+                    onclick="document.getElementById('mobMenu').classList.remove('open')">Free Estimate</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-bg" id="heroBg"><img
+                    src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1600&q=80"
+                    alt="Beautiful manicured lawn with fresh green grass" referrerpolicy="no-referrer" />
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="max-w" style="position:relative;width:100%">
+                <div class="hero-content" style="max-width:56rem">
+                    <div class="hero-rating rating-row">
+                        <div class="stars"><i data-lucide="star" style="width:14px;height:14px;fill:currentColor"></i><i
+                                data-lucide="star" style="width:14px;height:14px;fill:currentColor"></i><i
+                                data-lucide="star" style="width:14px;height:14px;fill:currentColor"></i><i
+                                data-lucide="star" style="width:14px;height:14px;fill:currentColor"></i><i
+                                data-lucide="star" style="width:14px;height:14px;fill:currentColor"></i></div>
+                        <span class="rating-text">4.5 Rating · 47 Google Reviews</span>
+                    </div>
+                    <h1>Transform Your<br><span class="accent">Outdoor Space</span></h1>
+                    <p class="sub">Fillmore's most trusted landscaping company. From lawn care to full landscape
+                        transformations — we
+                        create stunning outdoor spaces you'll love coming home to.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="cta-primary btn-hover">Get Your Free Estimate <i
+                                data-lucide="arrow-right" style="width:18px;height:18px"></i></a>
+                        <a href="tel:8055149924" class="phone-cta">
+                            <div class="phone-circle"><i data-lucide="phone" style="width:20px;height:20px"></i></div>
+                            <div>
+                                <p class="phone-label">Call or Text Anytime</p>
+                                <p class="phone-number">(805) 514-9924</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator"><i data-lucide="chevron-down"
+                    style="width:40px;height:40px;stroke-width:1"></i></div>
+        </section>
+
+        <!-- TRUST BAR -->
+        <section class="trust-bar">
+            <div class="max-w">
+                <div class="grid-2x2 fade-up" style="text-align:center">
+                    <div>
+                        <p class="stat-value">200+</p>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                    <div>
+                        <p class="stat-value">5+</p>
+                        <p class="stat-label">Years in Business</p>
+                    </div>
+                    <div>
+                        <p class="stat-value">4.5★</p>
+                        <p class="stat-label">Google Rating</p>
+                    </div>
+                    <div>
+                        <p class="stat-value">100%</p>
+                        <p class="stat-label">Licensed & Insured</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section id="about" class="py-32 bg-brand-bg">
+            <div class="max-w">
+                <div class="fade-up max-w-3xl" style="margin-bottom:5rem">
+                    <p class="section-label">Why Fillmore Chooses Us</p>
+                    <h2 class="section-title">Not All Landscapers<br><span class="light">Are Created Equal</span></h2>
+                    <p class="section-desc">Here's what sets Sebastian's Landscaping apart from every other landscaping
+                        company
+                        in the Fillmore area.</p>
+                </div>
+                <div class="grid-3" id="whyCards"></div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section id="process" class="py-32 bg-white">
+            <div class="max-w">
+                <div class="fade-up text-center" style="margin-bottom:6rem">
+                    <p class="section-label">How It Works</p>
+                    <h2 class="section-title">Your Dream Yard in<br><span class="light">4 Simple Steps</span></h2>
+                    <p class="section-desc" style="max-width:42rem;margin:0 auto">No stress, no guesswork. We handle
+                        everything from the first sketch to the last shrub — here's exactly how it works.</p>
+                </div>
+                <div class="grid-4" id="processCards"></div>
+                <div class="fade-up text-center" style="margin-top:4rem">
+                    <a href="#contact" class="btn-hover"
+                        style="display:inline-flex;align-items:center;gap:.75rem;padding:1.25rem 2.5rem;background:var(--brand-primary);color:#fff;font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.15em;border-radius:9999px;box-shadow:0 20px 40px rgba(0,0,0,.15);transition:background .5s"><span>Start
+                            With a Free Consultation</span> <i data-lucide="arrow-right"
+                            style="width:18px;height:18px"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="py-32 bg-brand-bg">
+            <div class="max-w">
+                <div class="fade-up max-w-3xl" style="margin-bottom:6rem">
+                    <p class="section-label">Our Services</p>
+                    <h2 class="section-title">Everything Your<br><span class="light">Property Needs</span></h2>
+                    <p class="section-desc">From a simple garden refresh to a complete estate overhaul — we have the
+                        expertise, crew, and equipment to handle it all.</p>
+                </div>
+                <div class="grid-2" style="gap:3rem 3rem" id="serviceCards"></div>
+            </div>
+        </section>
+
+        <!-- FREE ESTIMATE CTA -->
+        <section class="offer">
+            <div class="offer-bg"><img
+                    src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&q=80&w=1600"
+                    alt="" role="presentation" referrerpolicy="no-referrer" /></div>
+            <div class="max-w-4xl offer-inner fade-up">
+                <p class="section-label">Let's Get Started</p>
+                <h2><span class="light">Your Dream Yard</span><br>Is <span class="gold">One Call Away</span></h2>
+                <p class="sub">Whether you need weekly maintenance, a complete landscape transformation, or anything in
+                    between — we'll come to your property, assess your needs, and give you a free, no-pressure estimate.
+                </p>
+                <div class="offer-actions">
+                    <a href="#contact" class="cta-primary btn-hover">Get Your Free Estimate</a>
+                    <a href="tel:8055149924" class="offer-phone"><i data-lucide="phone"
+                            style="width:18px;height:18px"></i> Or call (805) 514-9924</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" class="py-32 bg-white">
+            <div class="max-w">
+                <div class="fade-up text-center mb-20">
+                    <p class="section-label">Client Results</p>
+                    <h2 class="section-title">Don't Take Our<br><span class="light">Word for It</span></h2>
+                    <div class="stars-row">
+                        <div class="stars"><i data-lucide="star" style="width:20px;height:20px;fill:currentColor"></i><i
+                                data-lucide="star" style="width:20px;height:20px;fill:currentColor"></i><i
+                                data-lucide="star" style="width:20px;height:20px;fill:currentColor"></i><i
+                                data-lucide="star" style="width:20px;height:20px;fill:currentColor"></i><i
+                                data-lucide="star" style="width:20px;height:20px;fill:currentColor"></i></div>
+                        <p class="stars-summary">4.5 Average · 47 Google Reviews</p>
+                    </div>
+                </div>
+                <div class="grid-2" id="testimonialCards"></div>
+            </div>
+        </section>
+
+        <!-- SERVICE AREA -->
+        <section class="py-24 bg-brand-bg">
+            <div class="max-w">
+                <div class="fade-up text-center" style="margin-bottom:4rem">
+                    <p class="section-label">Service Area</p>
+                    <h2 class="section-title"><span class="light">Proudly Serving</span> the Ventura County Region</h2>
+                </div>
+                <div class="fade-up area-tags" id="areaTags"></div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-32 bg-white">
+            <div class="max-w-4xl">
+                <div class="fade-up text-center mb-20">
+                    <p class="section-label">Frequently Asked Questions</p>
+                    <h2 class="section-title">Got Questions? <span class="light">We've Got Answers</span></h2>
+                </div>
+                <div id="faqList" style="display:flex;flex-direction:column;gap:1.25rem"></div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <div class="contact-bg"><img
+                    src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=1000"
+                    alt="" role="presentation" referrerpolicy="no-referrer" /></div>
+            <div class="max-w z-10">
+                <div class="contact-grid">
+                    <div class="fade-up">
+                        <p class="section-label" style="margin-bottom:2rem">Get Started Today</p>
+                        <h2 class="section-title" style="color:#fff">Ready to Love<br><span class="light">Your Yard
+                                Again?</span></h2>
+                        <p
+                            style="font-size:1.25rem;color:rgba(255,255,255,.5);margin-bottom:3rem;line-height:1.6;max-width:32rem">
+                            Get your free on-site consultation and a custom proposal with 3D renderings — no obligation,
+                            no pressure. Just a clear vision for your property.</p>
+                        <div style="display:flex;flex-direction:column;gap:2rem;margin-bottom:3rem">
+                            <div class="contact-check"><i data-lucide="check-circle-2"
+                                    style="width:20px;height:20px"></i><span>Free on-site property assessment &
+                                    consultation</span></div>
+                            <div class="contact-check"><i data-lucide="check-circle-2"
+                                    style="width:20px;height:20px"></i><span>Custom 3D design renderings included</span>
+                            </div>
+                            <div class="contact-check"><i data-lucide="check-circle-2"
+                                    style="width:20px;height:20px"></i><span>Detailed written proposal within 48
+                                    hours</span></div>
+                            <div class="contact-check"><i data-lucide="check-circle-2"
+                                    style="width:20px;height:20px"></i><span>0% financing available for qualified
+                                    projects</span></div>
+                        </div>
+                        <div style="display:flex;flex-direction:column;gap:2rem">
+                            <a href="tel:8055149924" class="contact-link">
+                                <div class="contact-circle"><i data-lucide="phone"
+                                        style="width:24px;height:24px;stroke-width:1"></i></div>
+                                <div>
+                                    <p class="lbl">Call or Text</p>
+                                    <p class="val">(805) 514-9924</p>
+                                </div>
+                            </a>
+                            <a href="mailto:alex@sebastianslandscaping.org" class="contact-link">
+                                <div class="contact-circle"><i data-lucide="mail"
+                                        style="width:24px;height:24px;stroke-width:1"></i></div>
+                                <div>
+                                    <p class="lbl">Email Us</p>
+                                    <p class="val">alex@sebastianslandscaping.org</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fade-up form-card">
+                        <h3>Get Your Free Estimate</h3>
+                        <p class="form-sub">Takes 30 seconds. We'll respond within 24 hours.</p>
+                        <!-- Contact Form -->
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="John" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(805) 555-1234" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service...</option>
+                                    <option value="lawn-maintenance">Weekly Lawn Maintenance</option>
+                                    <option value="landscape-design">Landscape Design & Installation</option>
+                                    <option value="irrigation">Irrigation Systems & Repair</option>
+                                    <option value="seasonal-planting">Seasonal Planting & Garden Care</option>
+                                    <option value="cleanup">One-Time Yard Cleanup</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Tell Us About Your Project</label>
+                                <textarea id="message" name="message"
+                                    placeholder="Describe your dream outdoor space..."></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn btn-hover">Request Free Consultation</button>
+                            <p class="form-note"><i data-lucide="lock"
+                                    style="width:12px;height:12px;display:inline;vertical-align:middle;margin-right:4px"></i>
+                                Your information is secure and never shared.</p>
+                        </form>
+                        <div id="formSuccess" style="display:none;text-align:center;padding:3rem 1rem;">
+                            <div
+                                style="width:4rem;height:4rem;border-radius:50%;background:rgba(184,134,11,.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+                                <i data-lucide="check-circle-2"
+                                    style="width:32px;height:32px;color:var(--brand-accent)"></i>
+                            </div>
+                            <h3 style="font-size:1.5rem;font-style:italic;margin-bottom:.75rem;">Thank You!</h3>
+                            <p style="color:rgba(18,31,18,.5);line-height:1.6;">We've received your request and will be
+                                in touch within 24 hours to schedule your free consultation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="max-w">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo"><img src="sebastian-logo.png" alt="Sebastian's Landscaping"
+                            style="height:72px;width:auto;object-fit:contain;" /></span>
+                    <p class="tagline">Fillmore's most trusted landscaping company — transforming outdoor spaces
+                        since 2020.</p>
+                    <div class="stars" style="margin-bottom:.5rem;color:var(--brand-accent)"><i data-lucide="star"
+                            style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star"
+                            style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star"
+                            style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star"
+                            style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star"
+                            style="width:16px;height:16px;fill:currentColor"></i></div>
+                    <p
+                        style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:rgba(18,31,18,.3)">
+                        4.5 Rating · 47 Google Reviews</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <p class="footer-col-title">Services</p>
+                        <ul>
+                            <li><a href="#services">Lawn Care</a></li>
+                            <li><a href="#services">Landscaping</a></li>
+                            <li><a href="#services">Irrigation</a></li>
+                            <li><a href="#services">Maintenance</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-col-title">Company</p>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#process">Our Process</a></li>
+                            <li><a href="#testimonials">Reviews</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-col-title">Connect</p>
+                        <div class="social-links"><a href="#" aria-label="Follow us on Instagram" class="social-link"><i
+                                    data-lucide="instagram" style="width:20px;height:20px;stroke-width:1"></i></a><a
+                                href="#" aria-label="Follow us on Facebook" class="social-link"><i
+                                    data-lucide="facebook" style="width:20px;height:20px;stroke-width:1"></i></a></div>
+                        <p
+                            style="font-size:.625rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:rgba(18,31,18,.3)">
+                            Licensed & Insured</p>
+                        <p style="font-size:.875rem;color:rgba(18,31,18,.4)">Licensed & Insured</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="footerYear"></span> Sebastian's Landscaping. Fillmore,
+                    CA.
+                </p>
+                <div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE BAR -->
+    <div id="stickyBar" class="sticky-bar">
+        <div class="sticky-bar-inner"><a href="tel:8055149924" class="bar-call"><i data-lucide="phone"
+                    style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:4px"></i>Call
+                Now</a><a href="#contact" class="bar-est">Free Estimate</a></div>
+    </div>
+
+
+</div>
