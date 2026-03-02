@@ -67,13 +67,36 @@
             if (!wasOpen) { el.classList.add('open'); el.querySelector('.faq-btn').setAttribute('aria-expanded', 'true') }
         }
 
-        // Form handler
+        // Form handler — sends to FormSubmit.co → drakeopsmith@gmail.com
         window.handleFormSubmit = function (e) {
             e.preventDefault();
             var form = document.getElementById('contactForm');
             var success = document.getElementById('formSuccess');
-            form.style.display = 'none';
-            success.style.display = 'block';
+            var btn = form.querySelector('button[type="submit"]');
+            var originalText = btn.textContent;
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+
+            var formData = new FormData(form);
+            formData.append('_subject', 'New Lead from Sebastian\'s Landscaping Website');
+            formData.append('_template', 'table');
+            formData.append('_captcha', 'false');
+
+            fetch('https://formsubmit.co/ajax/drakeopsmith@gmail.com', {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: formData
+            })
+                .then(function (response) { return response.json(); })
+                .then(function (data) {
+                    form.style.display = 'none';
+                    success.style.display = 'block';
+                })
+                .catch(function (error) {
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                    alert('Something went wrong. Please call us at (805) 514-9924 instead.');
+                });
         }
 
         // Scroll effects
